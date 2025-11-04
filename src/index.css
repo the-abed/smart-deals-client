@@ -1,0 +1,46 @@
+
+@import "tailwindcss";
+@plugin "daisyui";
+@plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+  --color-primary: #eaf2ef;
+  --color-secondary: #912f56;
+}
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+}
+
+
+.btn-gradient:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.05);
+}
+
+.btn-gradient:active {
+  transform: translateY(0);
+  filter: brightness(0.95);
+}
+
+.btn-gradient:focus {
+  outline: 2px solid transparent;
+  box-shadow: 0 0 0 4px rgba(99, 46, 227, 0.12), 0 6px 18px rgba(99, 46, 227, 0.18);
+}
+
+/* Dark mode: transparent background + gradient border */
+.btn-gradient {
+  border-radius: 8px;
+  border: 2px solid transparent;
+  background: transparent;
+  border-color: #632EE3;
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
+
+.my-input{
+  @apply w-full p-3 border border-gray-300 dark:border-gray-700 rounded-lg bg-gray-50 dark:bg-gray-800 text-gray-800 dark:text-gray-200 focus:outline-none focus:ring-2 focus:ring-purple-500
+}
+
+
+
