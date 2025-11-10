@@ -1,4 +1,10 @@
+import axios from "axios";
+
+const axiosInstance = axios.create({
+  baseURL: 'http://localhost:3000',
+})
 const useAxios = () => {
-  const axios = useAxiosPrivate();
-  return axios;
+  return axiosInstance;
 };
+
+export default useAxios;

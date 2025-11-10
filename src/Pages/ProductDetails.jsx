@@ -39,9 +39,9 @@ const ProductDetails = () => {
       </Suspense>
 
       <div>
-        <h3 className="text-3xl text-center">
+        <h3 className="text-3xl text-center my-10">
           Bids for this Product{" "}
-          <span className="text-primary">({bids.length})</span>{" "}
+          <span className="text-sm">({bids.length})</span>{" "}
         </h3>
 
         <div className="overflow-x-auto">
